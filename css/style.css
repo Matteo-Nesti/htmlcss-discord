@@ -31,6 +31,10 @@ ul li {
     list-style: none;
 }
 
+li:hover {
+    opacity: 80%;
+}
+
 h2 {
     color: #000;
     font-size: 50px;
@@ -50,7 +54,9 @@ p {
     line-height: 30px;
 }
 
-
+footer {
+    padding-top: 100px;
+}
 
 /* utility */
 
@@ -66,7 +72,7 @@ p {
     align-items: center;
 }
 
-.justify-content {
+.justify-center {
     justify-content: center;
 }
 
@@ -219,30 +225,59 @@ p {
 /* footer */
 
 .social-link-column {
-    min-height: 500px;
+    
     flex-basis: calc(100% / 3);
-    background-color: lightcoral;
-    border: 2px dashed black;
+}
+
+.social-link-column h3 {
+    font-weight: 800;
+    font-size: 30px;
+    color: #7289da;
+}
+
+.social-link-column h4 {
+    color: #fff;
+}
+
+.leng {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.leng img {
+    width: 100%;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 30px;
+}
+
+.social-icon i{
+    padding-right: 20px;
 }
 
 .help-link-column {
-    min-height: 500px;
     flex-basis: calc(100% / 3 * 2);
-    background-color: lightseagreen;
-    border: 2px dashed black;
 }
+
 
 .link {
     flex-basis: 100%;
-    border: 2px dashed white; 
+    line-height: 30px;
 }
 
-footer section {
-    border-bottom: 1px solid rgb(255, 255, 255);
+.link h5{
+    font-size: 20px;
+    color: #7289da;
+}
+
+.sign-up.btn {
+    background-color: #7289da;
 }
 
 .ending-row {
+    border-top: 1px solid white;
     height: 100px;
-    background-color: greenyellow;
 }
 
