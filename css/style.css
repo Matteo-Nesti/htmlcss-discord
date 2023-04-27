@@ -22,9 +22,6 @@ header {
     background-size: 100%;
 }
 
-main > :nth-child(even) {
-    background: #CCC;
-}
 
 footer {
     background-color: #23272a;
@@ -34,10 +31,23 @@ ul li {
     list-style: none;
 }
 
+h2 {
+    color: #000;
+    font-size: 50px;
+}
+
 a {
     color: #fff;
     font-size: 18px;
     text-decoration: none;
+}
+
+p {
+    color: #000;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
 }
 
 
@@ -64,7 +74,16 @@ a {
     justify-content: space-around;
 }
 
+.direction-col{
+    flex-direction: column;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
 .btn {
+    font-weight: 600;
     padding: 15px;
     border-radius: 25px;
 }
@@ -84,6 +103,9 @@ a {
     margin-top: 40px;
 }
 
+.m-b {
+    margin-bottom: 100px;
+}
 
 /* header */
 
@@ -127,21 +149,20 @@ a {
 
 .spotlight p {
     color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
 }
 
-.left-btn {
+.m-left-btn {
     margin-right: 25px;
 }
 
-.download {
+.btn.download-white {
+    
     background-color: #fff;
     color: #000;
 }
 
-.browser {
+.btn.browser {
+    
     color: #fff;
     background-color: #23272a;
 }
@@ -149,23 +170,50 @@ a {
 /* main */ 
 
 .large-column {
-    min-height: 300px;
-    flex-basis: 70%;
-    background-color: pink;
-    border: 2px dashed black;
+    min-height: 500px;
+    flex-basis: 60%;
 }
 
 .small-column {
-    min-height: 300px;
+    min-height: 200px;
     flex-basis: 30%;
-    background-color: aquamarine;
-    border: 2px dashed black;
 }
 
 .single-column {
     min-height: 600px;
-    background-color: darkgreen;
-    border: 2px dashed black;
+}
+
+.end-title {
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.end-title h3 {
+    padding: 50px;
+    font-size: 30px;
+}
+
+.btn.download-lightblue {
+    background-color: #8ea1e1;
+}
+
+.white-section {
+    background-color: #fff;
+}
+
+.gray-section  {
+    background-color: #eaeaea;
+}
+
+.wave-divider {
+    background-image: url(../img/wave.svg);
+    height: 100px;
+    opacity: 8%;
+}
+
+.wave-divider.upside-down {
+    transform: rotate(180deg);
 }
 
 /* footer */
