@@ -31,10 +31,6 @@ ul li {
     list-style: none;
 }
 
-li:hover {
-    opacity: 80%;
-}
-
 h2 {
     color: #000;
     font-size: 50px;
@@ -98,6 +94,9 @@ footer {
     opacity: 80%;
 }
 
+a:hover {
+    opacity: 80%;
+}
 
 .container {
     width: 1400px;
