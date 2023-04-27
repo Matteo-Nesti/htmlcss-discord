@@ -13,8 +13,12 @@
 
 /* generics */
 
+body{
+    font-family: sans-serif;
+}
+
 header {
-    background-color: aqua;
+    background-image: url(../img/jumbo.png);
 }
 
 main > :nth-child(even) {
@@ -23,6 +27,16 @@ main > :nth-child(even) {
 
 footer {
     background-color: #23272a;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
 }
 
 /* utility */
@@ -40,43 +54,51 @@ footer {
 }
 
 .justify-content {
-
     justify-content: center;
+}
 
+.space-around {
+    justify-content: space-around;
 }
 
 
 .container {
-    width: 1080px;
+    width: 1400px;
     margin: 0 auto;
     padding: var(--m-p)
 }
 
 
-/* header --- 
-so che si ripete molto codice ma l'ho riscritto dato l'effettivo 
-contenuto rappresentativo diverso */
+/* header */
 
 .logo {
-    flex-basis: 25%;
     height: 50px;
-    background-color: goldenrod;
-    border:2px dashed black; 
 }
+
 
 .nav-bar{
     flex-basis: 50%;
     height: 50px;
-    background-color: goldenrod;
-    border:2px dashed black; 
-
 }
 
+.nav-bar ul {
+    width: 100%;
+}
+
+
 .login {
-    flex-basis: 25%;
+    padding: 0 15px;
     height: 50px;
-    background-color: goldenrod;
-    border:2px dashed black; 
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+.login:hover {
+    opacity: 80%;
+}
+
+.login > a {
+    color: #23272a;
 }
 
 .spotlight-container {
