@@ -5,12 +5,6 @@
     margin: 0;
 }
 
-/* custom properties */
-:root{
-    --m-p: 30px;
-
-}
-
 /* generics */
 
 body{
@@ -138,8 +132,7 @@ a:hover {
 }
 
 .spotlight-container {
-    margin-top: 40px;
-    padding: var(--m-p)
+    padding: 60px 30px 30px 30px;
 }
 
 .spotlight {
